@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+
+<repositories version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>y-brother-overlay</name>
+    <description>Drivers for Brother scaner and printer</description>
+    <homepage>https://github.com/yakor/y-brother-overlay</homepage>
+    <owner>
+      <email>yakor_spb@gmail.com</email>
+    </owner>
+    <source type="git">git://github.com/yakor/y-brother-overlay.git</source>
+  </repo>
+</repositories>
