@@ -10,8 +10,8 @@ SRC_REV="1"
 KEYWORDS="~x86 ~amd64"
 
 DESCRIPTION="Brother Image Scan"
-SRC_URI="amd64? (${PN}-${PV}-${SRC_REV}.amd64.deb)
-		 x86? (${PN}-${PV}-${SRC_REV}.i386.deb)"
+SRC_URI="amd64? ( ${PN}-${PV}-${SRC_REV}.amd64.deb )
+		 x86? ( ${PN}-${PV}-${SRC_REV}.i386.deb )"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -27,8 +27,12 @@ QA_PREBUILT="*"
 
 pkg_nofetch() {
 	einfo "Please download"
-	einfo "  - ${SRC_URI}"
-	einfo "from BROTHER and put it into DISTDIR"
+	if use amd64; then
+		einfo " - ${PN}-${PV}-${SRC_REV}.amd64.deb"
+	else
+		einfo " - ${PN}-${PV}-${SRC_REV}.i386.deb"
+	fi
+	einfo "from https://support.brother.com and put it into /usr/portage/distfiles"
 }
 
 src_unpack() {
