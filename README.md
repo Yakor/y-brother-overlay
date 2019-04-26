@@ -1,10 +1,10 @@
-# Gentoo Broter proprietary drivers overlay #
+# Gentoo Brother proprietary drivers overlay #
 
 ### What is it ###
 
 Gentoo drivers for Brother LPD2500D series.
 
-Printer driwer for x86 can be used on amd64 no_multilib system.
+Printer driver for x86 can be used on amd64 no_multilib system.
 
 ### Quick install ###
 
@@ -12,7 +12,7 @@ Printer driwer for x86 can be used on amd64 no_multilib system.
 
 Download deb packages from https://support.brother.com and put it into `/usr/portage/distfiles`
 
-Needed
+Needed:
 - LPR printer driver (dcpl2500dlpr)
 - CUPSwrapper printer driver (dcpl2500dcupswrapper)
 - Scanner driver (brascan4)
@@ -30,7 +30,7 @@ Needed
 
 #### Install ####
 
-Scaner driver
+Scanner driver
 
     emerge --ask media-gfx/brscan4
 
