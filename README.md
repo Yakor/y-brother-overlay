@@ -1,4 +1,4 @@
-# Gentoo Broter propiertary drivers overlay #
+# Gentoo Broter proprietary drivers overlay #
 
 ### What is it ###
 
@@ -8,9 +8,10 @@ Printer driwer for x86 can be used on amd64 no_multilib system.
 
 ### Quick install ###
 
-#### Download propiertary drivers ####
+#### Download proprietary drivers ####
 
-Download deb packages from https://support.brother.com and put it into '/usr/portage/distfiles'
+Download deb packages from https://support.brother.com and put it into `/usr/portage/distfiles`
+
 Needed
 - LPR printer driver (dcpl2500dlpr)
 - CUPSwrapper printer driver (dcpl2500dcupswrapper)
@@ -30,6 +31,9 @@ Needed
 #### Install ####
 
 Scaner driver
+
     emerge --ask media-gfx/brscan4
+
 Printer driver
+
     emerge --ask net-print/dcpl2500dcupswrapper
